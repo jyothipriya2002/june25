@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 100px;
+            padding: 10px;
+            background-color:black;
+            color:white;
+            border:0;
+            cursor:pointer;
+            transition: 0.5s;
+            transition-duration: 0.5s;
+        }
+        button:hover{
+            background-color: grey;
+        }
+        img{
+            width:100px;
+            height:100px;
+            margin-top: 40px;
+            transition: 0.5s;
+           }
+        .ROTATE:hover~.image img{        
+        transform:rotate(50deg);
+        } 
+        .SKEW:hover~.image img{   
+        transform: skew(80deg);
+        }
+        .SCALE:hover~.image img{   
+        transform:scale(2.3);
+       }
+        .TRANSLATE:hover~.image img{   
+        transform:translate(100px);
+        }
+        
+
+    </style>
+</head>
+<body align="center">
+    <fieldset>
+<div>
+
+   <h1>TRANSFORM EXAMPLE</h1>
+   <button class="ROTATE">ROTATE</button>
+   <button class="SKEW">SKEW</button>
+   <button class="SCALE">SCALE</button>
+   <button class="TRANSLATE">TRANSLATE</button><br><br>
+   <div class="image">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.OT_m1hzXibs-tdpvR-EUkQHaE8&pid=Api&P=0&h=180"> 
+   </div>
+
+</div>
+</body>
+</html>
